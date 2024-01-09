@@ -1,0 +1,195 @@
+INFO - 2023-12-14 14:12:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 14:26:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 16:37:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 16:39:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-14 16:39:17 --> Class "BaconQrCode\Encoder\Encoder" not found
+in APPPATH\Controllers\PaymentController.php on line 36.
+ 1 APPPATH\Controllers\PaymentController.php(24): App\Controllers\PaymentController->generateQRCode()
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PaymentController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\catcare\\public\\index.php')
+INFO - 2023-12-14 16:41:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-14 16:41:38 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 C:\xampp\htdocs\catcare\app\Controllers\Home.php(38): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Home->food()
+#8 C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\xampp\htdocs\catcare\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#5 C:\xampp\htdocs\catcare\app\Controllers\Home.php(38): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Home->food()
+#7 C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 C:\xampp\htdocs\catcare\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-12-14 16:41:38 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 5 APPPATH\Controllers\Home.php(38): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->food()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\catcare\\public\\index.php')
+INFO - 2023-12-14 16:41:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-14 16:41:46 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect()
+#1 C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 C:\xampp\htdocs\catcare\app\Controllers\Home.php(38): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Home->food()
+#8 C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\xampp\htdocs\catcare\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#3 C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#5 C:\xampp\htdocs\catcare\app\Controllers\Home.php(38): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\CodeIgniter.php(932): App\Controllers\Home->food()
+#7 C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 C:\xampp\htdocs\catcare\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\catcare\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('...')
+#11 {main}
+CRITICAL - 2023-12-14 16:41:46 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 5 APPPATH\Controllers\Home.php(38): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->food()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\catcare\\public\\index.php')
+INFO - 2023-12-14 16:41:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-14 16:41:59 --> Class "BaconQrCode\Encoder\QrCode" not found
+in APPPATH\Controllers\PaymentController.php on line 29.
+ 1 APPPATH\Controllers\PaymentController.php(18): App\Controllers\PaymentController->generateQRCode()
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PaymentController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\catcare\\public\\index.php')
+INFO - 2023-12-14 16:46:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-14 16:46:38 --> Too few arguments to function BaconQrCode\Encoder\QrCode::__construct(), 0 passed in C:\xampp\htdocs\catcare\app\Controllers\PaymentController.php on line 29 and exactly 5 expected
+in VENDORPATH\bacon\bacon-qr-code\src\Encoder\QrCode.php on line 55.
+ 1 APPPATH\Controllers\PaymentController.php(29): BaconQrCode\Encoder\QrCode->__construct()
+ 2 APPPATH\Controllers\PaymentController.php(18): App\Controllers\PaymentController->generateQRCode()
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PaymentController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\catcare\\public\\index.php')
+INFO - 2023-12-14 16:49:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 16:49:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-14 16:49:20 --> Too few arguments to function BaconQrCode\Encoder\QrCode::__construct(), 0 passed in C:\xampp\htdocs\catcare\app\Controllers\PaymentController.php on line 32 and exactly 5 expected
+in VENDORPATH\bacon\bacon-qr-code\src\Encoder\QrCode.php on line 55.
+ 1 APPPATH\Controllers\PaymentController.php(32): BaconQrCode\Encoder\QrCode->__construct()
+ 2 APPPATH\Controllers\PaymentController.php(20): App\Controllers\PaymentController->generateQRCode()
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PaymentController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\catcare\\public\\index.php')
+INFO - 2023-12-14 16:50:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 16:50:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-14 16:50:05 --> Too few arguments to function BaconQrCode\Encoder\QrCode::__construct(), 0 passed in C:\xampp\htdocs\catcare\app\Controllers\PaymentController.php on line 31 and exactly 5 expected
+in VENDORPATH\bacon\bacon-qr-code\src\Encoder\QrCode.php on line 55.
+ 1 APPPATH\Controllers\PaymentController.php(31): BaconQrCode\Encoder\QrCode->__construct()
+ 2 APPPATH\Controllers\PaymentController.php(19): App\Controllers\PaymentController->generateQRCode()
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PaymentController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\catcare\\public\\index.php')
+INFO - 2023-12-14 16:51:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 16:51:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-14 16:51:25 --> Too few arguments to function BaconQrCode\Encoder\QrCode::__construct(), 0 passed in C:\xampp\htdocs\catcare\app\Controllers\PaymentController.php on line 31 and exactly 5 expected
+in VENDORPATH\bacon\bacon-qr-code\src\Encoder\QrCode.php on line 55.
+ 1 APPPATH\Controllers\PaymentController.php(31): BaconQrCode\Encoder\QrCode->__construct()
+ 2 APPPATH\Controllers\PaymentController.php(19): App\Controllers\PaymentController->generateQRCode()
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\PaymentController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\catcare\\public\\index.php')
+INFO - 2023-12-14 16:54:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 16:54:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 16:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 16:54:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 16:54:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 16:55:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 16:55:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 16:55:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 16:55:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 16:55:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 16:55:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-14 16:55:18 --> 60 : SSL certificate problem: unable to get local issuer certificate
+in SYSTEMPATH\HTTP\CURLRequest.php on line 675.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(675): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError()
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(381): CodeIgniter\HTTP\CURLRequest->sendRequest()
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(143): CodeIgniter\HTTP\CURLRequest->send()
+ 4 APPPATH\Controllers\MidtransController.php(44): CodeIgniter\HTTP\CURLRequest->request()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\MidtransController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\catcare\\public\\index.php')
+INFO - 2023-12-14 16:55:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 16:55:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 16:55:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-14 16:55:39 --> 22 : The requested URL returned error: 404
+in SYSTEMPATH\HTTP\CURLRequest.php on line 675.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(675): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError()
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(381): CodeIgniter\HTTP\CURLRequest->sendRequest()
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(143): CodeIgniter\HTTP\CURLRequest->send()
+ 4 APPPATH\Controllers\MidtransController.php(44): CodeIgniter\HTTP\CURLRequest->request()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\MidtransController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\catcare\\public\\index.php')
+INFO - 2023-12-14 16:55:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 16:56:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 16:57:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 16:58:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 16:58:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 16:58:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-14 16:59:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
