@@ -21,7 +21,7 @@
 									} else {
 								?>			
 								<?php foreach ($shampo as $s) : ?>
-									<form action="<?= base_url('midtranscontroller') ?>" method="post" >
+									<form action="<?= base_url('Midtranscontroller') ?>" method="post" >
 											<input type="hidden" name="jenis" value="shampo"/>
 											<input type="hidden" name="id_m" value="<?= $s->id_shampo ?>"/>
 											<input type="hidden" name="nama" value="<?= $s->nama_shampo ?>"/>
