@@ -26,7 +26,7 @@ class Database extends Config
      */
     public array $default = [
         'DSN'      => '',
-        'hostname' => 'localhost',
+        'hostname' => 'http://praktisimengajar.my.id',
         'username' => 'root',
         'password' => '',
         'database' => 'cat_care',
