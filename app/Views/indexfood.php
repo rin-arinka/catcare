@@ -17,7 +17,7 @@
 								<div class="row clearfix">
 
 									<?php foreach ($food as $s) : ?>
-										<form action="<?= base_url('midtranscontroller') ?>" method="post" >
+										<form action="<?= base_url('MidtransController') ?>" method="post" >
 												<input type="hidden" name="jenis" value="makanan"/>
 												<input type="hidden" name="id_m" value="<?= $s->id_makanan ?>"/>
 												<input type="hidden" name="nama" value="<?= $s->nama_makanan ?>"/>
